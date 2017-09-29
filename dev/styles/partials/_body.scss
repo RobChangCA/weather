@@ -1,0 +1,249 @@
+// $darkblue: rgb(52,73,94);
+// $blue: rgb(41,128,185);
+// $green: rgb(39,174,96);
+// $orange: rgb(230, 126, 34);
+// $grey: rgb(236,240,241);
+
+body{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 62.5%;
+}
+.shader{
+	background: rgba(0, 0, 0, 0);
+	background-size: cover;
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	align-items: center;
+	transition: all 2s; 
+	overflow: hidden;
+	justify-content: center;
+}
+.wrapper{
+	max-width: 800px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row-reverse;
+}
+main{
+	display: flex;
+	flex-direction: row-reverse;
+}
+//City selection
+
+.input{
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 999;
+	ul{
+		background: white;
+		line-height: 4rem;
+		font-size: 2rem;
+		color: $orange;
+		list-style: none;
+		text-transform: lowercase;
+		border-radius: 25px;
+	}
+}
+.my-input{
+	font-size: 3rem;
+	padding: 25px; 
+	border-radius: 25px;
+	border: none;
+	color: $orange;
+	&::placeholder{
+		color: $orange;
+	}
+
+}
+.input__name{
+	font-size: 4rem;
+	text-align: center;
+	color: $green;
+	text-shadow:-1px 0 rgba(85, 109, 230, 0.46), 0 1px rgba(85, 109, 230, 0.46), 1px 0 rgba(85, 109, 230, 0.46), 0 -1px rgba(85, 109, 230, 0.46);
+}
+.input__slogan{
+	font-size: 3rem;
+	color:white;
+	text-align: center;
+	margin: 200px;
+	margin-bottom: 50px;
+	margin-top: 0;
+	color: white;
+	text-shadow:-1px 0 rgba(85, 109, 230, 0.46), 0 1px rgba(85, 109, 230, 0.46), 1px 0 rgba(85, 109, 230, 0.46), 0 -1px rgba(85, 109, 230, 0.46);
+
+}
+
+//buttons
+aside{
+	// width: 20%;
+	display: flex;
+	flex-direction: column;
+	opacity: 0;
+
+}
+.box{
+	width: 150px;
+	height: 150px;
+	font-weight: bold;
+	background: $grey;
+	border: 1px solid black;
+	border-right: 2px solid black;
+	transform: scale(1) rotate(0);
+	transition: all 1s;
+	&:hover{
+		background: black;
+		transform: scale(1.05) rotate(0);
+		z-index: 100;
+	}
+
+}
+
+#side__main{
+	overflow: hidden;
+	img{
+		width: 100%;
+	}
+}
+#side__temp{
+	overflow: hidden;
+	img{
+		width: 100%;
+	}
+}
+#side__uv{
+	overflow: hidden;
+	img{
+		width: 100%;
+	}
+}
+#side__pm25{
+	overflow: hidden;
+	img{
+		width: 100%;
+	}
+}
+//main
+.display{
+	width: 600px;
+	background: linear-gradient(to right, $grey, rgba(0,0,0,0));
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	opacity: 0;
+}
+.document__gallery{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 300px;
+
+
+}
+h1{
+	font-size: 3rem;
+	text-align: right;
+	color: $orange;
+	margin-right: 50px;
+}
+.display__main{
+	font-size: 2rem;
+	margin: 20px;
+	text-align: center;
+	color: $green;
+}
+.display__info{
+	font-size: 1.5rem;
+	margin: 0 20px;
+	text-align: center;
+	color: white;
+	
+}
+.imgContainer{
+	width: 150px;
+	height: 150px;
+	position: relative;
+	margin-bottom: 75px;
+	img{
+		width: 100%;
+	}
+}
+.imgTitle{
+	text-align: center;
+	position: absolute;
+	bottom:-50px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 100%;
+	font-size: 1rem;
+	color: $orange;
+}
+.imgText{
+	text-align: center;
+	position: absolute;
+	bottom: -100px;
+	left: 50%;
+	transform: translateX(-50%);
+	font-size: 1.5rem;
+	width: 100%;
+	white-space: nowrap;
+	color: $green;
+}
+
+// Selection gallery
+.info__gallery{
+	display: flex;
+	justify-content: space-around;
+	height: 300px;
+}
+.infoGallery__container{
+	display: flex;
+	align-items: center;
+	
+}
+.infoGallery__img{
+	height: 300px;
+}
+.infoGallery__p{
+	font-size: 2rem;
+	width: 60%;
+	align-self: flex-start;
+	color: white;
+}
+// invisible tag
+.invisible{
+	display: none;
+}
+//active button
+.black{
+	background: black;
+}
+
+//animation  
+
+.fullscreen__bg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+}
+
+.fullscreen__bg--video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right:0;
+    bottom:0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}

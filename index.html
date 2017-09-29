@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<script src=""></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Climate Metrics</title>
+	<link rel="stylesheet" href="./public/styles/style.css">
+	<link rel="stylesheet" href="./public/styles/animate.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+</head>
+<body>
+	<div class="shader">
+		<div class="fullscreen__bg">
+		    <video loop muted autoplay poster="./public/assets/Clouds_Fly_By/Clouds_Fly_By.jpg" class="fullscreen__bg--video">
+		        <source src="./public/assets/Clouds_Fly_By/Clouds_Fly_By.mp4" type="video/mp4">
+		    </video>
+		</div>
+		<div class="wrapper">
+			<main>
+				<section class="tp-autocomplete input">
+					<h2 class="input__name">Climate Metrics</h2>
+					<label for="input" class="input__slogan">We break down weather information into meaningful measurements that matter to you</label>
+					<input type="text" class="my-input tp-ac__input" id="input" placeholder="Please select a city" autocomplete="off">
+					<ul class="tp-ac__list"></ul>
+				</section>
+				<section class="display animated">
+					<div class="textContainer">
+						<h1 class="animated"></h1>
+						<h2 class="display__main" id="main"></h2>
+						<p class="display__info"></p>
+					</div>
+					<div class="document__gallery">
+						<div class="imgContainer imgContainer__1">
+							<p class="imgTitle imgTitle__1"></p>
+							<img  alt="" class="img__1 svg">
+							<p class="imgText imgText__1"></p>
+						</div>
+						<div class="imgContainer imgContainer__2">
+							<p class="imgTitle imgTitle__2"></p>
+							<img  alt="" class="img__2 svg">
+							<p class="imgText imgText__2"></p>
+						</div>
+						<div class="imgContainer imgContainer__3">
+							<p class="imgTitle imgTitle__3"></p>
+							<img  alt="" class="img__3 svg">
+							<p class="imgText imgText__3"></p>
+						</div>
+					</div>
+					<div class="info__gallery invisible">
+						<div class="infoGallery__container">
+							<img src="" alt="" class="infoGallery__img svg">
+						</div>
+						<p class="infoGallery__p animated"></p>
+					</div>
+				</section>
+				<aside class="animated">
+					<button class="box black" id="side__main"><img src="public/assets/wdocument.svg" alt=""></button>
+					<button class="box" id="side__temp"><img src="public/assets/wtemp.svg" alt="" class="sideTemp__image"></button>
+					<button class="box" id="side__uv"><img src="public/assets/wsun.svg" alt="" class="sideUV__image"></button>
+					<button class="box" id="side__pm25"><img src="public/assets/whaze.svg" alt="" class="sidePM__image"></button>
+				</aside>
+			</main>
+		</div>
+	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="./public/scripts/autocomplete.js"></script>
+	<script src='./public/scripts/main.js'></script>
+</body>
+</html>
+
+
+<!-- References -->
+<!-- API -->
+<!-- Darksky -->
+<!-- WAQI -->
+<!-- temperature -->
+<!-- frostbite http://www.ec.gc.ca/meteo-weather/default.asp?lang=En&n=5FBF816A-1#X-201501151120261 -->
+<!-- heatstroke https://www.weather.gov/ama/heatindex -->
+
+<!-- UV -->
+<!-- http://www.who.int/uv/publications/en/UVIGuide.pdf -->
+
+<!-- AQI -->
+<!-- Here is the rule of thumb: one cigarette per day is the rough equivalent of a PM2.5 level of 22 μg/m3.  -->
+<!-- http://berkeleyearth.org/air-pollution-and-cigarette-equivalence/ 
+	1 cigarette is equivalent to an air pollution of 22 μg/m3 for one day.-->
+
+<!-- svg -->
+<!-- weather widgets by niedzwiedz from the Noun Project-->
+<!-- Document by Trishul from the Noun Project -->
+<!-- trembling by Llisole from the Noun Project -->
+<!-- man on fire Created by Laurent Canivet from the Noun project -->
+<!-- sweating Created by Laurent Canivet from the Noun project -->
+<!-- happy pose by Abraham from the Noun Project -->
+<!-- Winter jacket by Gan Khoon Lay from the Noun Project -->
+<!-- wildfire and hat by Gan Khoon Lay from the Noun Project -->
+<!-- beach beach volleyball by Diego Naive from the Noun Project -->
+<!-- haze haze by IYIKON from the Noun Project -->
+<!-- Tree by Royyan Wijaya from the Noun Project -->
+
+<!-- video from Coverr -->

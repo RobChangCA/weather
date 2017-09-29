@@ -1,0 +1,65 @@
+
+@media (min-aspect-ratio: 16/9) {
+  .fullscreen__bg--video {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .fullscreen__bg--video {
+    width: auto;
+    height: 100%;
+  }
+}
+@media (max-width: 770px){
+	main{
+		flex-direction: column-reverse;
+	}
+	aside{
+		flex-direction: row;
+		width: 100%;
+	}
+	h1{
+		font-size: 2.5rem;
+	}
+	// .display{
+	// 	width: 500px;
+	// }
+	.box{
+		// width: 25%;
+		height: 140px;
+	}
+	.display__main{
+		font-size: 1.5rem;
+	}
+	.infoGallery__p{
+		font-size: 1.2rem;
+	} 
+	.display__info{
+		font-size: 1.2rem;
+	}
+	.input__slogan{
+		font-size: 1.5rem;
+		margin: 20px;
+	}
+	.my-input{
+		font-size: 1.3rem;
+	}
+	.input__slogan{
+		font-size: 1.5rem;
+	}
+	.input__name{
+		font-size: 3rem;
+
+	}
+}
+@media (max-width: 635px){
+	.box{
+		height: 100px;
+		
+	}
+	// .display{
+	// 	width: 350px;
+	// }
+}
