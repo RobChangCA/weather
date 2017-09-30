@@ -55,11 +55,28 @@
 	}
 }
 @media (max-width: 635px){
+	.display{
+		width: 400px;
+	}
+	aside{
+		width: 400px;
+	}
 	.box{
 		height: 100px;
-		
 	}
-	// .display{
-	// 	width: 350px;
-	// }
+}
+@media (max-width: 430px){
+	.display{
+		width: 350px;
+		height: calc(100vh - 80px);
+	}
+	aside{
+		width: 350px;
+	}
+	.box{
+		height: 80px;
+	}
+	.wrapper{
+		height: 100vh;
+	}
 }
