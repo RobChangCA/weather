@@ -19,10 +19,10 @@ body{
 	overflow: hidden;
 	justify-content: center;
 }
+
 .wrapper{
 	max-width: 800px;
 	margin: 0 auto;
-	
 }
 main{
 	display: flex;
@@ -216,7 +216,7 @@ h1{
 	color: white;
 }
 // invisible tag
-.invisible{
+.invisible{  
 	display: none;
 }
 //active button

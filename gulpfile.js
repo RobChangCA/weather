@@ -27,20 +27,16 @@ gulp.task('scripts', () => {
 });
 
 // a task to watch all other tasks
-gulp.task('watch', ['styles', 'scripts', 'browser-sync'], function() {
-  gulp.watch('./dev/scripts/**.js', ['scripts']);
-  gulp.watch('./dev/styles/**.*.scss', ['styles']);
+gulp.task('watch', function() {
+  gulp.watch('./dev/scripts/**/*.js', ['scripts']);
+  gulp.watch('./dev/styles/**/*.scss', ['styles']);
   gulp.watch('*.html', reload);
 });
 //browser sync
 gulp.task('browser-sync', () => {
-    browserSync.init({
-        server: '.'
-    });
+  browserSync.init({
+    server: '.'  
+  })
 });
 
-gulp.task('default', ['styles', 'browser-sync', 'scripts'], () => {
-    gulp.watch('./dev/styles/**/*.scss', ['styles']);
-    gulp.watch('./dev/scripts/main.js'), ['scripts'];
-     gulp.watch('*.html', reload);
-});
+gulp.task('default', ['styles', 'scripts', 'watch', 'browser-sync'])

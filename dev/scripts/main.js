@@ -11,7 +11,7 @@ air.getCity = function(){
 		$('h1').addClass('slideInRight');
 	});
 } 
- 
+  
 //ajax
 air.getData = function(location){
 	let aqi = $.ajax({
@@ -111,7 +111,7 @@ air.display = function(aqi, weather){
 air.displayMain = function(data){
 	//Toggle invisible and active
 	$('.document__gallery').removeClass('invisible');
-	$('.info__gallery').css('display', 'none');
+	$('.info__gallery').addClass("invisible");
 	$('.box').removeClass('black');
 	$('#side__main').addClass('black');
 	//main text
@@ -136,7 +136,7 @@ air.displayTemp = function(data){
 	//Hide main document gallery and show temp info
 	$('.document__gallery').addClass('invisible');
 	$('.info__gallery').removeClass('invisible');
-	$('.info__gallery').css('display', 'flex');
+	// $('.info__gallery').css('display', 'flex');
 	$('.box').removeClass('black');
 	$('#side__temp').addClass('black');
 	//main
@@ -214,7 +214,7 @@ air.displayUV = function(data){
 	//Hide main document gallery
 	$('.document__gallery').addClass('invisible');
 	$('.info__gallery').removeClass('invisible');
-	$('.info__gallery').css('display', 'flex');
+	// $('.info__gallery').css('display', 'flex');
 	$('.box').removeClass('black');
 	$('#side__uv').addClass('black');
 	//main
@@ -254,7 +254,7 @@ air.displayPM25 = function(data){
 	//Hide main document gallery
 	$('.document__gallery').addClass('invisible');
 	$('.info__gallery').removeClass('invisible');
-	$('.info__gallery').css('display', 'flex');
+	// $('.info__gallery').css('display', 'flex');
 	$('.box').removeClass('black');
 	$('#side__pm25').addClass('black');
 	//Convert AQI to cigarette metric
@@ -309,9 +309,7 @@ $(function(){
 	air.init();
 });
 
-
-
-
+ 
 
 //pseudo code
 
