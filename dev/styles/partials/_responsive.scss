@@ -12,6 +12,19 @@
     height: 100%;
   }
 } 
+@media (max-width: 975px){
+	.input__slogan{
+		font-size: 2rem;
+	}
+	.my-input{
+		font-size: 2rem;
+	}
+	.input{
+		ul{
+			font-size: 2rem;
+		}
+	}
+}
 @media (max-width: 770px){
 	main{
 		flex-direction: column-reverse;
@@ -57,7 +70,10 @@
 @media (max-width: 635px){
 	.wrapper{
 		margin: 0;
-		width: 100%;
+		// width: 100%;
+	}
+	.input__name{
+		margin: 20px;
 	}
 	main{
 		justify-content: center;
@@ -80,9 +96,25 @@
 		margin-top: 10px;
 		font-size: 1.5rem;
 	}
+	.input__name{
+		margin: 10px;
+		font-size: 1.5rem;
+	}
+	.input__slogan{
+		font-size: 1rem;
+	}
+	.my-input{
+		font-size: 1rem;
+	}
 	.display__main{
 		font-size: 1rem;
 		margin: 5px;
+	}
+	.imgTitle{
+		font-size: 1rem;
+	}
+	.imgText{
+		font-size: 1rem;
 	}
 	.display{
 		width: 320px;
