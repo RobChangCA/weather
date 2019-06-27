@@ -2,6 +2,7 @@ var air = {};
 air.key = `cd842d7bc5cda4c1a7a64b19cb38d889d2e1e221`;
 air.aqi = ``;
  
+
 //User input
 air.getCity = function(){
 	TeleportAutocomplete.init('.my-input').on('change', function(returned) {
@@ -52,6 +53,8 @@ air.display = function(aqi, weather){
 	const weatherDescription = weather.minutely ? weather.minutely.summary : weather.daily.summary;
 
 // animation
+	$('.display').removeClass('fadeOut');
+	$('aside').removeClass('fadeOut');
 	$('.display').addClass('fadeIn');
 	$('aside').addClass('fadeIn');
 	$('.shader').css('background', 'rgba(0, 0, 0, 0.8)');
@@ -102,6 +105,8 @@ air.display = function(aqi, weather){
 				air.displayUV(data);
 			}else if (this.id === 'side__pm25'){
 				air.displayPM25(data);
+			}else if (this.id === 'reset'){
+				air.reset();
 			}
 		});
 }
@@ -298,26 +303,12 @@ air.displayPM25 = function(data){
 	}
 }
 
+air.reset = function(){
+	$('.display').addClass('fadeOut');
+	$('aside').addClass('fadeOut');
+	$('.display').removeClass('fadeIn');
+	$('aside').removeClass('fadeIn');
+	$('.input').removeClass('invisible');
+}
 
-
-//Initialize page
-air.init = function(){
-	air.getCity();
-};
-
-$(function(){
-	air.init();
-});
-
-//pseudo code
-
-//On the first page ask for user input from section input.
-//when user puts in input remove section
-
-//show splash page
-//temperature name etc
-//if user clicks sidebar replace main page with info
-//inside new main page show relevant info based on current conditions
-
-
-
+air.getCity();
