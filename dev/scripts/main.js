@@ -309,8 +309,6 @@ $(function(){
 	air.init();
 });
 
- 
-
 //pseudo code
 
 //On the first page ask for user input from section input.
