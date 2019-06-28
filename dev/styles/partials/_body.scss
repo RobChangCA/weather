@@ -42,20 +42,24 @@ main{
 	z-index: 999;
 	ul{
 		background: white;
-		line-height: 4rem;
+		// line-height: 4rem;
 		font-size: 2rem;
 		color: $orange;
 		list-style: none;
-		text-transform: lowercase;
+		margin-top: 10px;
+		// text-transform: lowercase;
 		border-radius: 25px;
 		position: absolute;
 	}
 }
 .my-input{
-	font-size: 3rem;
-	padding: 25px; 
-	border-radius: 25px;
+	font-size: 2rem;
+	padding: 10px 15px; 
+	width: 50vw;
+	max-width: 700px;
+	border-radius: 15px;
 	border: none;
+	margin-top: 100px;
 	color: $orange;
 	&::placeholder{
 		color: $orange;
@@ -68,16 +72,22 @@ main{
 	color: $green;
 	text-shadow:-1px 0 rgba(85, 109, 230, 0.46), 0 1px rgba(85, 109, 230, 0.46), 1px 0 rgba(85, 109, 230, 0.46), 0 -1px rgba(85, 109, 230, 0.46);
 }
+
+
 .input__slogan{
-	font-size: 3rem;
+	font-size: 2rem;
 	color:white;
 	text-align: center;
-	margin: 200px;
-	margin-bottom: 50px;
-	margin-top: 0;
 	color: white;
+	width: 75%;
+	max-width: 1000px;
 	text-shadow:-1px 0 rgba(85, 109, 230, 0.46), 0 1px rgba(85, 109, 230, 0.46), 1px 0 rgba(85, 109, 230, 0.46), 0 -1px rgba(85, 109, 230, 0.46);
 
+}
+
+#input{
+	position: relative;
+	// top: 200px;
 }
 
 //buttons
@@ -248,4 +258,8 @@ h1{
     width: 100%;
     height: 100%;
     z-index: 1;
+}
+
+.geolocate{
+	display: none;
 }
